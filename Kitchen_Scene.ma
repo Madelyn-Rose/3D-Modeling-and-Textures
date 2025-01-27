@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Kitchen_Scene.ma
-//Last modified: Fri, Jan 24, 2025 03:40:00 PM
+//Last modified: Sun, Jan 26, 2025 02:00:45 PM
 //Codeset: UTF-8
 requires maya "2025ff03";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
@@ -11,14 +11,14 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202409190603-cbdc5a7e54";
 fileInfo "osv" "Mac OS X 15.2";
-fileInfo "UUID" "BE06F81F-7F4F-20E8-5B4B-6F9062B8CDA4";
+fileInfo "UUID" "AF16B81A-2E42-6E60-BC2F-FB90730177A6";
 createNode transform -s -n "persp";
 	rename -uid "FC3EB7DF-4349-4AE7-E721-C5A508B3A6DC";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -27.6896767264166 10.183631291362312 -16.227190927050049 ;
-	setAttr ".r" -type "double3" 162.39555539900971 -59.628094889492978 -180 ;
-	setAttr ".rp" -type "double3" 1.27675647831893e-15 2.2828960943854781e-15 0 ;
-	setAttr ".rpt" -type "double3" -1.7408843023906521e-15 1.1213654966244677e-14 -2.8128764147292195e-17 ;
+	setAttr ".t" -type "double3" 21.101719460108967 13.959837782054196 22.21680971247666 ;
+	setAttr ".r" -type "double3" -24.49371668673168 43.525437954329185 -4.3865563915940196e-15 ;
+	setAttr ".rp" -type "double3" 3.9968028886505635e-15 -2.248201624865942e-15 7.1054273576010019e-15 ;
+	setAttr ".rpt" -type "double3" 3.2551477993891279e-15 1.4243562883200447e-14 -7.084581169752077e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "DD55AC49-A147-F5E7-1AA3-58BF4D127C86";
 	setAttr -k off ".v" no;
@@ -27,7 +27,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 3.1974423109204508e-14 -7.1054273576010019e-15 1.7763568394002505e-14 ;
+	setAttr ".tp" -type "double3" -2.4868995751603507e-14 -1.2434497875801753e-14 -1.7763568394002505e-14 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "C2A4CBC0-4441-07C4-EEE3-BCBD8F1A28EC";
@@ -2477,20 +2477,20 @@ createNode mesh -n "pPlaneShape1" -p "pPlane1";
 		-2.0459256 -4.7184479e-16 -0.29571855 -2.0459256 -4.7184479e-16 -0.25868452 -1.9080662 
 		-4.7184479e-16 -0.25868452 -1.9080662 -4.7184479e-16 -0.29571843;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "4E33E148-F646-FC82-9129-8185FA0E047B";
+	rename -uid "5BBA0F22-1A4B-B245-B422-818CC1D2A998";
 	setAttr -s 5 ".lnk";
 	setAttr -s 5 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "00D65AD4-824D-9941-E94D-94A54124D961";
+	rename -uid "55B646FE-BB4B-2F1B-091E-C28CFA665349";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "547F3011-F24A-416F-7B15-8F8C2A874E4C";
+	rename -uid "44E37C1E-6742-7619-142F-4D949CB5D700";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "55E7D2D9-7044-06A9-C350-CBA43FA12EFE";
+	rename -uid "F03936E8-8643-F8AB-DF2E-1EAF120AF88A";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "2937EF24-4F45-70B0-0A20-14A20FE4E3C6";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "7A12312B-4447-B67B-1287-7F881AE474BA";
+	rename -uid "1866805A-674A-F6E8-878D-7F8FA0A704B8";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "4DD7155B-FF44-8E0A-0250-1DA6A6CD3AF8";
 	setAttr ".g" yes;
